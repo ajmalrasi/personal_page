@@ -1,6 +1,6 @@
 # ajmalrasi.com
 
-Personal website for [ajmalrasi.com](https://ajmalrasi.com), deployed as a Render static site.
+Personal website for [ajmalrasi.com](https://ajmalrasi.com), hosted on GitHub Pages.
 
 ## Local preview
 
@@ -11,34 +11,37 @@ python3 -m http.server 8080
 
 Open [http://localhost:8080](http://localhost:8080).
 
-## Deploy to Render
+## Deploy with GitHub Pages
 
-### Option A: Blueprint (recommended)
+1. Push changes to the `main` branch.
+2. In the repo on GitHub, open **Settings → Pages**.
+3. Under **Build and deployment**:
+   - **Source:** Deploy from a branch
+   - **Branch:** `main`
+   - **Folder:** `/ (root)`
+4. Under **Custom domain**, enter `ajmalrasi.com` and save.
+5. Enable **Enforce HTTPS** once DNS is verified.
 
-1. Push this repo to GitHub.
-2. In the [Render Dashboard](https://dashboard.render.com/), click **New → Blueprint**.
-3. Connect the repository and apply the `render.yaml` blueprint.
-4. Render will create a static site and attach `ajmalrasi.com` and `www.ajmalrasi.com`.
+The site will be available at:
 
-### Option B: Manual static site
+- https://ajmalrasi.github.io/personal_page/ (project URL)
+- https://ajmalrasi.com (after DNS is configured)
 
-1. Push this repo to GitHub.
-2. In Render, click **New → Static Site**.
-3. Connect the repo and use:
-   - **Build Command:** `echo "Static site"`
-   - **Publish Directory:** `.`
-4. Add custom domains under **Settings → Custom Domains**.
+## DNS for ajmalrasi.com (GoDaddy)
 
-## DNS for ajmalrasi.com
+Update DNS in GoDaddy. Keep your **MX** and email records.
 
-After adding the domain in Render, update DNS at your registrar (currently GoDaddy):
-
-| Record | Name | Value |
+| Type | Name | Value |
 | --- | --- | --- |
-| CNAME | `www` | Your Render static site URL (e.g. `ajmalrasi-com.onrender.com`) |
-| ALIAS / ANAME / A | `@` | Render apex instructions from the dashboard |
+| A | `@` | `185.199.108.153` |
+| A | `@` | `185.199.109.153` |
+| A | `@` | `185.199.110.153` |
+| A | `@` | `185.199.111.153` |
+| CNAME | `www` | `ajmalrasi.github.io` |
 
-Render provides exact DNS values on the **Custom Domains** page for your service. TLS certificates are issued automatically once DNS is verified.
+Remove the old **WebsiteBuilder** A record for `@`.
+
+DNS can take up to 24 hours to propagate. GitHub will issue HTTPS automatically after verification.
 
 ## Structure
 
@@ -47,5 +50,6 @@ Render provides exact DNS values on the **Custom Domains** page for your service
 ├── index.html
 ├── css/style.css
 ├── favicon.svg
-└── render.yaml
+├── CNAME
+└── .nojekyll
 ```

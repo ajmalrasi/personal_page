@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: ajmalrasi-com
+    runtime: static
+    buildCommand: echo "Static site — no build step"
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: true
+    domains:
+      - ajmalrasi.com
+      - www.ajmalrasi.com
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /css/*
+        name: Cache-Control
+        value: public, max-age=31536000, immutable

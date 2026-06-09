@@ -7,23 +7,30 @@
       name="description"
       content="Ajmal Rasi — Software Engineering Consultant at TGS. Scalable AI algorithms, computer vision, deep learning, and MLOps."
     />
-    <title>Ajmal Rasi</title>
+    <title>Ajmal Rasi · AI &amp; Software Engineering</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Syne:wght@500;600;700;800&family=Work+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-a" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow-b" aria-hidden="true"></div>
+
     <header class="site-header">
       <nav class="nav" aria-label="Primary">
-        <a class="nav-logo" href="#top">Ajmal Rasi</a>
+        <a class="nav-logo" href="#top">
+          <span class="nav-logo-mark">AR</span>
+          <span>Ajmal Rasi</span>
+        </a>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experience">Work</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -32,208 +39,255 @@
 
     <main id="top">
       <section class="hero">
-        <p class="hero-eyebrow">Software Consultant @ TGS</p>
-        <h1>Ajmal Rasi</h1>
-        <p class="hero-lead">
-          Seasoned software engineering professional with extensive experience in
-          scalable AI algorithms, computer vision, deep learning, and MLOps —
-          from edge inference to petabyte-scale data platforms.
-        </p>
-        <div class="hero-meta">
-          <span>Bengaluru, Karnataka, India</span>
-          <span aria-hidden="true">·</span>
-          <span>6+ years experience</span>
+        <div class="hero-copy reveal">
+          <p class="hero-badge">
+            <span class="pulse"></span>
+            Software Consultant @ TGS
+          </p>
+          <h1>
+            Building AI that ships —
+            <span class="gradient-text">from Jetson to the cloud.</span>
+          </h1>
+          <p class="hero-lead">
+            I turn computer vision models, deep learning pipelines, and MLOps
+            workflows into production systems that actually scale.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://www.linkedin.com/in/ajmalrasi/" target="_blank" rel="noopener noreferrer">
+              Connect on LinkedIn
+            </a>
+            <a class="button button-ghost" href="https://github.com/ajmalrasi" target="_blank" rel="noopener noreferrer">
+              View GitHub
+            </a>
+          </div>
         </div>
-        <div class="hero-actions">
-          <a class="button button-primary" href="https://www.linkedin.com/in/ajmalrasi/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a class="button button-secondary" href="https://github.com/ajmalrasi" target="_blank" rel="noopener noreferrer">GitHub</a>
+
+        <div class="hero-panel reveal" style="--delay: 0.1s">
+          <div class="hero-card hero-card-main">
+            <p class="hero-card-label">Currently</p>
+            <p class="hero-card-title">Software Engineering Consultant</p>
+            <p class="hero-card-sub">TGS · Energy data &amp; AI infrastructure</p>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-value">6+</span>
+              <span class="stat-label">Years building ML systems</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">Edge → Cloud</span>
+              <span class="stat-label">TensorRT to petabyte pipelines</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">Bengaluru</span>
+              <span class="stat-label">Open to consulting &amp; collab</span>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="about" class="section">
-        <div class="section-heading">
-          <h2>About</h2>
+        <div class="section-head reveal">
+          <p class="section-eyebrow">01 · About</p>
+          <h2>Engineering intelligence into real products.</h2>
         </div>
-        <div class="about-grid">
-          <p>
-            I develop scalable AI algorithms and optimize software solutions
-            across computer vision, deep learning modeling, and MLOps. My work
-            spans open-source ML contributions, production pipelines on cloud
-            and edge hardware, and end-to-end systems from research prototypes
-            to deployed services.
+
+        <div class="about-layout">
+          <p class="about-text reveal">
+            From driver monitoring on automotive SOCs to seismic data ingestion
+            at petabyte scale — I specialize in the gap between a working model
+            and a system people can rely on. Open-source contributor, edge AI
+            tinkerer, pipeline obsessive.
           </p>
-          <ul class="skill-list">
-            <li>Computer Vision &amp; ADAS</li>
-            <li>Deep Learning &amp; MLOps</li>
-            <li>Python, C++, Java</li>
-            <li>TensorFlow, PyTorch, OpenCV</li>
-            <li>GCP, Azure DevOps, Docker</li>
-            <li>TensorRT, DeepStream, Jetson</li>
-            <li>Dask, Airflow, Pub/Sub</li>
-            <li>NLP, Rasa, spaCy</li>
-          </ul>
+
+          <div class="skill-cloud reveal" style="--delay: 0.08s">
+            <span>Computer Vision</span>
+            <span>ADAS / DMS</span>
+            <span>Deep Learning</span>
+            <span>MLOps</span>
+            <span>Python</span>
+            <span>C++</span>
+            <span>TensorRT</span>
+            <span>Jetson</span>
+            <span>GCP</span>
+            <span>Azure DevOps</span>
+            <span>Dask</span>
+            <span>Airflow</span>
+            <span>PyTorch</span>
+            <span>OpenCV</span>
+            <span>NLP / Rasa</span>
+            <span>Docker</span>
+          </div>
         </div>
       </section>
 
       <section id="experience" class="section">
-        <div class="section-heading">
-          <h2>Experience</h2>
+        <div class="section-head reveal">
+          <p class="section-eyebrow">02 · Experience</p>
+          <h2>Where I've shipped.</h2>
         </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-meta">
-              <span class="timeline-date">Jul 2024 — Present</span>
-            </div>
-            <div class="timeline-content">
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-body">
+              <div class="timeline-top">
+                <time>Jul 2024 — Present</time>
+                <span class="timeline-tag">Current</span>
+              </div>
               <h3>Software Engineering Consultant</h3>
               <p class="timeline-org">TGS</p>
               <p>
-                Consulting on scalable AI and data infrastructure for energy
-                analytics — building production systems with strong emphasis on
-                maintainability, CI/CD, and cloud-native workflows.
+                Scalable AI and data infrastructure for energy analytics —
+                production systems with CI/CD, cloud-native workflows, and
+                maintainable pipelines.
               </p>
             </div>
-          </article>
+          </li>
 
-          <article class="timeline-item">
-            <div class="timeline-meta">
-              <span class="timeline-date">Jul 2022 — Jun 2024</span>
-            </div>
-            <div class="timeline-content">
+          <li class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-body">
+              <div class="timeline-top">
+                <time>Jul 2022 — Jun 2024</time>
+              </div>
               <h3>Senior Software Engineer</h3>
               <p class="timeline-org">TGS · Bengaluru</p>
               <p>
-                Scaled seismic data ingestion for petabyte-scale SEG-Y files
-                with Dask, NumPy, and GeoPandas. Built GCP pipelines on
-                Kubernetes, Cloud Run, Airflow, and Pub/Sub, plus Azure DevOps
-                CI/CD with automated tests and code quality checks.
+                Petabyte-scale seismic ingestion with Dask &amp; GeoPandas. GCP
+                on Kubernetes, Cloud Run, Airflow, Pub/Sub. Azure DevOps CI/CD
+                with automated quality gates.
               </p>
             </div>
-          </article>
+          </li>
 
-          <article class="timeline-item">
-            <div class="timeline-meta">
-              <span class="timeline-date">May 2021 — Jun 2022</span>
-            </div>
-            <div class="timeline-content">
+          <li class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-body">
+              <div class="timeline-top">
+                <time>May 2021 — Jun 2022</time>
+              </div>
               <h3>Machine Learning Engineer</h3>
               <p class="timeline-org">Visteon India · Bengaluru</p>
               <p>
-                Led driver monitoring system design with Caffe, TensorFlow, and
-                PyTorch. Ported CV models to NXP/Samsung SOCs, built 360°
-                surround-view with C++/OpenCV/OpenGL, and delivered photometric
-                alignment R&amp;D for ADAS systems.
+                Led DMS design with Caffe, TensorFlow, PyTorch. On-device AI on
+                NXP/Samsung SOCs. 360° surround-view in C++/OpenCV/OpenGL.
               </p>
             </div>
-          </article>
+          </li>
 
-          <article class="timeline-item">
-            <div class="timeline-meta">
-              <span class="timeline-date">Dec 2020 — Apr 2021</span>
-            </div>
-            <div class="timeline-content">
+          <li class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-body">
+              <div class="timeline-top">
+                <time>Dec 2020 — Apr 2021</time>
+              </div>
               <h3>Machine Learning Engineer</h3>
-              <p class="timeline-org">Zuqo Corporation · Bengaluru</p>
+              <p class="timeline-org">Zuqo Corporation</p>
               <p>
-                Built end-to-end fingerprint ML POC with Dockerized inference on
-                GCP, REST APIs for Android integration, and browser-based
-                background subtraction for eKYC using MediaPipe and
+                Fingerprint ML POC, Dockerized GCP inference, REST APIs for
+                Android, browser eKYC segmentation with MediaPipe &amp;
                 TensorFlow.js.
               </p>
             </div>
-          </article>
+          </li>
 
-          <article class="timeline-item">
-            <div class="timeline-meta">
-              <span class="timeline-date">May 2019 — Nov 2019</span>
-            </div>
-            <div class="timeline-content">
+          <li class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-body">
+              <div class="timeline-top">
+                <time>May 2019 — Nov 2019</time>
+              </div>
               <h3>ML &amp; Computer Vision Engineer</h3>
-              <p class="timeline-org">Integration Wizards Solutions · Bengaluru</p>
+              <p class="timeline-org">Integration Wizards Solutions</p>
               <p>
-                Production pipelines with TensorRT, DeepStream, GStreamer, and
-                Kafka on NVIDIA Jetson. Object detection, tracking, pose
-                estimation, and model quantization (FP32, FP16, INT8).
+                TensorRT + DeepStream + Kafka on Jetson. Detection, tracking,
+                pose estimation, INT8 quantization.
               </p>
             </div>
-          </article>
+          </li>
 
-          <article class="timeline-item">
-            <div class="timeline-meta">
-              <span class="timeline-date">2018 — 2019</span>
-            </div>
-            <div class="timeline-content">
-              <h3>Software Engineer, Machine Learning</h3>
-              <p class="timeline-org">ApplicateAI (SalesCode.ai), Ceptes Software</p>
+          <li class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-body">
+              <div class="timeline-top">
+                <time>2018 — 2019</time>
+              </div>
+              <h3>Software Engineer, ML</h3>
+              <p class="timeline-org">ApplicateAI · Ceptes Software</p>
               <p>
-                Chatbots at scale with Rasa and spaCy, custom tokenization for
-                local languages, and deep regression models for inventory demand
-                forecasting and predictive analytics.
+                Rasa chatbots, spaCy NLP, custom tokenization, demand forecasting
+                with deep regression models.
               </p>
             </div>
-          </article>
-        </div>
+          </li>
+        </ol>
       </section>
 
       <section id="projects" class="section">
-        <div class="section-heading">
-          <h2>Selected Projects</h2>
+        <div class="section-head reveal">
+          <p class="section-eyebrow">03 · Projects</p>
+          <h2>Things I've built.</h2>
         </div>
-        <div class="project-grid">
-          <article class="project-card project-card-static">
+
+        <div class="bento">
+          <article class="bento-card bento-featured reveal">
+            <div class="bento-tags">
+              <span>Edge AI</span>
+              <span>FastAPI</span>
+              <span>TFLite</span>
+            </div>
             <h3>Raspberry Pi 5 + Coral Edge TPU</h3>
             <p>
-              Real-time object detection using PyCoral's optimized TensorFlow
-              Lite API and a FastAPI server for high-performance edge inference.
+              Real-time object detection with PyCoral's optimized TensorFlow Lite
+              API and a FastAPI server for low-latency edge inference.
             </p>
-            <span class="project-link">LinkedIn project · 2024 — Present</span>
+            <span class="bento-meta">2024 — Present</span>
           </article>
-          <a class="project-card" href="https://github.com/ajmalrasi/Sign-language-recognition-with-RNN-and-Mediapipe" target="_blank" rel="noopener noreferrer">
+
+          <a class="bento-card reveal" href="https://github.com/ajmalrasi/Sign-language-recognition-with-RNN-and-Mediapipe" target="_blank" rel="noopener noreferrer" style="--delay: 0.05s">
+            <div class="bento-tags"><span>MediaPipe</span><span>RNN</span></div>
             <h3>Sign Language Recognition</h3>
-            <p>RNN-based sign language recognition with MediaPipe.</p>
-            <span class="project-link">View on GitHub →</span>
+            <p>Gesture recognition pipeline with MediaPipe landmarks and RNN classification.</p>
+            <span class="bento-link">GitHub →</span>
           </a>
-          <a class="project-card" href="https://github.com/ajmalrasi/tensorflow-yolov3" target="_blank" rel="noopener noreferrer">
+
+          <a class="bento-card reveal" href="https://github.com/ajmalrasi/tensorflow-yolov3" target="_blank" rel="noopener noreferrer" style="--delay: 0.1s">
+            <div class="bento-tags"><span>YOLOv3</span><span>TensorFlow</span></div>
             <h3>TensorFlow YOLOv3</h3>
-            <p>Pure TensorFlow YOLOv3 implementation with custom dataset training.</p>
-            <span class="project-link">View on GitHub →</span>
+            <p>Pure TF implementation with custom dataset training support.</p>
+            <span class="bento-link">GitHub →</span>
           </a>
-          <a class="project-card" href="https://github.com/ajmalrasi/agenticai" target="_blank" rel="noopener noreferrer">
+
+          <a class="bento-card reveal" href="https://github.com/ajmalrasi/agenticai" target="_blank" rel="noopener noreferrer" style="--delay: 0.15s">
+            <div class="bento-tags"><span>Agents</span><span>LLM</span></div>
             <h3>agenticai</h3>
-            <p>Agentic AI experiments and tooling.</p>
-            <span class="project-link">View on GitHub →</span>
+            <p>Experiments in agentic AI workflows and tooling.</p>
+            <span class="bento-link">GitHub →</span>
           </a>
         </div>
       </section>
 
-      <section id="contact" class="section contact">
-        <div class="section-heading">
-          <h2>Contact</h2>
+      <section id="contact" class="section section-contact">
+        <div class="contact-card reveal">
+          <p class="section-eyebrow">04 · Contact</p>
+          <h2>Let's build something.</h2>
+          <p>
+            Open to consulting, collaboration, and hard engineering problems —
+            especially at the intersection of AI and production systems.
+          </p>
+          <div class="contact-actions">
+            <a class="button button-primary" href="https://www.linkedin.com/in/ajmalrasi/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="button button-ghost" href="https://github.com/ajmalrasi" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="button button-ghost" href="https://twitter.com/MrAjmalRasi" target="_blank" rel="noopener noreferrer">Twitter</a>
+          </div>
         </div>
-        <p class="contact-lead">
-          Best way to reach me is on LinkedIn. Open to consulting, collaboration,
-          and interesting engineering challenges.
-        </p>
-        <ul class="contact-links">
-          <li>
-            <a href="https://www.linkedin.com/in/ajmalrasi/" target="_blank" rel="noopener noreferrer">linkedin.com/in/ajmalrasi</a>
-          </li>
-          <li>
-            <a href="https://github.com/ajmalrasi" target="_blank" rel="noopener noreferrer">github.com/ajmalrasi</a>
-          </li>
-          <li>
-            <a href="https://twitter.com/MrAjmalRasi" target="_blank" rel="noopener noreferrer">@MrAjmalRasi</a>
-          </li>
-        </ul>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="year"></span> Ajmal Rasi</p>
+      <p>&copy; <span id="year"></span> Ajmal Rasi · Bengaluru</p>
     </footer>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>

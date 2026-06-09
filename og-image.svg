@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#07090f"/>
+  <rect width="1200" height="630" fill="url(#bg)" opacity="0.9"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff6b4a" stop-opacity="0.18"/>
+      <stop offset="0.55" stop-color="#3dd6d0" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#9b7bff" stop-opacity="0.14"/>
+    </linearGradient>
+    <linearGradient id="text" x1="80" y1="280" x2="760" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff6b4a"/>
+      <stop offset="0.55" stop-color="#3dd6d0"/>
+      <stop offset="1" stop-color="#9b7bff"/>
+    </linearGradient>
+  </defs>
+  <text x="80" y="120" fill="#8b9cb0" font-family="Arial, sans-serif" font-size="28" letter-spacing="4">AJMAL RASI</text>
+  <text x="80" y="290" fill="#eef2f7" font-family="Arial, sans-serif" font-size="72" font-weight="700">AI &amp; Software</text>
+  <text x="80" y="380" fill="url(#text)" font-family="Arial, sans-serif" font-size="72" font-weight="700">Engineering</text>
+  <text x="80" y="470" fill="#8b9cb0" font-family="Arial, sans-serif" font-size="34">Computer vision · MLOps · Edge to cloud</text>
+  <text x="80" y="560" fill="#3dd6d0" font-family="Arial, sans-serif" font-size="30">ajmalrasi.com</text>
+</svg>

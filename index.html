@@ -66,6 +66,9 @@
     <meta itemprop="name" content="Ajmal Rasi" />
     <meta itemprop="jobTitle" content="Software Engineering Consultant" />
     <meta itemprop="url" content="https://ajmalrasi.com/" />
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <canvas id="neural-canvas" aria-hidden="true"></canvas>
+    <div class="cursor-orb" aria-hidden="true"></div>
     <div class="bg-grid" aria-hidden="true"></div>
     <div class="bg-glow bg-glow-a" aria-hidden="true"></div>
     <div class="bg-glow bg-glow-b" aria-hidden="true"></div>
@@ -94,7 +97,7 @@
           </p>
           <h1 itemprop="headline">
             Building AI that ships —
-            <span class="gradient-text">from Jetson to the cloud.</span>
+            <span class="gradient-text dynamic-role" aria-live="polite">from Jetson to the cloud.</span>
           </h1>
           <p class="hero-lead" itemprop="description">
             I turn computer vision models, deep learning pipelines, and MLOps
@@ -111,21 +114,44 @@
         </div>
 
         <div class="hero-panel reveal" style="--delay: 0.1s">
-          <div class="hero-card hero-card-main">
+          <div class="hero-card hero-card-main tilt-card">
             <p class="hero-card-label">Currently</p>
             <p class="hero-card-title">Software Engineering Consultant</p>
             <p class="hero-card-sub">TGS · Energy data &amp; AI infrastructure</p>
           </div>
+          <div class="system-card tilt-card">
+            <div class="system-top">
+              <span></span>
+              <span></span>
+              <span></span>
+              <p>agent-runtime</p>
+            </div>
+            <div class="system-line">
+              <span class="prompt">$</span>
+              <span class="typed-command" aria-live="polite"></span>
+              <span class="caret"></span>
+            </div>
+            <div class="signal-bars" aria-hidden="true">
+              <span style="--h: 38%"></span>
+              <span style="--h: 62%"></span>
+              <span style="--h: 48%"></span>
+              <span style="--h: 76%"></span>
+              <span style="--h: 54%"></span>
+              <span style="--h: 86%"></span>
+              <span style="--h: 44%"></span>
+              <span style="--h: 68%"></span>
+            </div>
+          </div>
           <div class="hero-stats">
-            <div class="stat">
-              <span class="stat-value">6+</span>
+            <div class="stat tilt-card">
+              <span class="stat-value count-up" data-target="6">0</span>
               <span class="stat-label">Years building ML systems</span>
             </div>
-            <div class="stat">
+            <div class="stat tilt-card">
               <span class="stat-value">Edge → Cloud</span>
               <span class="stat-label">TensorRT to petabyte pipelines</span>
             </div>
-            <div class="stat">
+            <div class="stat tilt-card">
               <span class="stat-value">Bengaluru</span>
               <span class="stat-label">Open to consulting &amp; collab</span>
             </div>
@@ -148,22 +174,22 @@
           </p>
 
           <div class="skill-cloud reveal" style="--delay: 0.08s">
-            <span>Computer Vision</span>
-            <span>ADAS / DMS</span>
-            <span>Deep Learning</span>
-            <span>MLOps</span>
-            <span>Python</span>
-            <span>C++</span>
-            <span>TensorRT</span>
-            <span>Jetson</span>
-            <span>GCP</span>
-            <span>Azure DevOps</span>
-            <span>Dask</span>
-            <span>Airflow</span>
-            <span>PyTorch</span>
-            <span>OpenCV</span>
-            <span>NLP / Rasa</span>
-            <span>Docker</span>
+            <span class="magnetic">Computer Vision</span>
+            <span class="magnetic">ADAS / DMS</span>
+            <span class="magnetic">Deep Learning</span>
+            <span class="magnetic">MLOps</span>
+            <span class="magnetic">Python</span>
+            <span class="magnetic">C++</span>
+            <span class="magnetic">TensorRT</span>
+            <span class="magnetic">Jetson</span>
+            <span class="magnetic">GCP</span>
+            <span class="magnetic">Azure DevOps</span>
+            <span class="magnetic">Dask</span>
+            <span class="magnetic">Airflow</span>
+            <span class="magnetic">PyTorch</span>
+            <span class="magnetic">OpenCV</span>
+            <span class="magnetic">NLP / Rasa</span>
+            <span class="magnetic">Docker</span>
           </div>
         </div>
       </section>
@@ -177,7 +203,7 @@
         <ol class="timeline">
           <li class="timeline-item reveal">
             <div class="timeline-marker"></div>
-            <div class="timeline-body">
+            <div class="timeline-body tilt-card">
               <div class="timeline-top">
                 <time>Jul 2024 — Present</time>
                 <span class="timeline-tag">Current</span>
@@ -194,7 +220,7 @@
 
           <li class="timeline-item reveal">
             <div class="timeline-marker"></div>
-            <div class="timeline-body">
+            <div class="timeline-body tilt-card">
               <div class="timeline-top">
                 <time>Jul 2022 — Jun 2024</time>
               </div>
@@ -210,7 +236,7 @@
 
           <li class="timeline-item reveal">
             <div class="timeline-marker"></div>
-            <div class="timeline-body">
+            <div class="timeline-body tilt-card">
               <div class="timeline-top">
                 <time>May 2021 — Jun 2022</time>
               </div>
@@ -225,7 +251,7 @@
 
           <li class="timeline-item reveal">
             <div class="timeline-marker"></div>
-            <div class="timeline-body">
+            <div class="timeline-body tilt-card">
               <div class="timeline-top">
                 <time>Dec 2020 — Apr 2021</time>
               </div>
@@ -241,7 +267,7 @@
 
           <li class="timeline-item reveal">
             <div class="timeline-marker"></div>
-            <div class="timeline-body">
+            <div class="timeline-body tilt-card">
               <div class="timeline-top">
                 <time>May 2019 — Nov 2019</time>
               </div>
@@ -256,7 +282,7 @@
 
           <li class="timeline-item reveal">
             <div class="timeline-marker"></div>
-            <div class="timeline-body">
+            <div class="timeline-body tilt-card">
               <div class="timeline-top">
                 <time>2018 — 2019</time>
               </div>
@@ -278,7 +304,7 @@
         </div>
 
         <div class="bento">
-          <article class="bento-card bento-featured reveal">
+          <article class="bento-card bento-featured reveal tilt-card">
             <div class="bento-tags">
               <span>Edge AI</span>
               <span>FastAPI</span>
@@ -292,21 +318,21 @@
             <span class="bento-meta">2024 — Present</span>
           </article>
 
-          <a class="bento-card reveal" href="https://github.com/ajmalrasi/Sign-language-recognition-with-RNN-and-Mediapipe" target="_blank" rel="noopener noreferrer" style="--delay: 0.05s">
+          <a class="bento-card reveal tilt-card" href="https://github.com/ajmalrasi/Sign-language-recognition-with-RNN-and-Mediapipe" target="_blank" rel="noopener noreferrer" style="--delay: 0.05s">
             <div class="bento-tags"><span>MediaPipe</span><span>RNN</span></div>
             <h3>Sign Language Recognition</h3>
             <p>Gesture recognition pipeline with MediaPipe landmarks and RNN classification.</p>
             <span class="bento-link">GitHub →</span>
           </a>
 
-          <a class="bento-card reveal" href="https://github.com/ajmalrasi/tensorflow-yolov3" target="_blank" rel="noopener noreferrer" style="--delay: 0.1s">
+          <a class="bento-card reveal tilt-card" href="https://github.com/ajmalrasi/tensorflow-yolov3" target="_blank" rel="noopener noreferrer" style="--delay: 0.1s">
             <div class="bento-tags"><span>YOLOv3</span><span>TensorFlow</span></div>
             <h3>TensorFlow YOLOv3</h3>
             <p>Pure TF implementation with custom dataset training support.</p>
             <span class="bento-link">GitHub →</span>
           </a>
 
-          <a class="bento-card reveal" href="https://github.com/ajmalrasi/agenticai" target="_blank" rel="noopener noreferrer" style="--delay: 0.15s">
+          <a class="bento-card reveal tilt-card" href="https://github.com/ajmalrasi/agenticai" target="_blank" rel="noopener noreferrer" style="--delay: 0.15s">
             <div class="bento-tags"><span>Agents</span><span>LLM</span></div>
             <h3>agenticai</h3>
             <p>Experiments in agentic AI workflows and tooling.</p>
@@ -316,7 +342,7 @@
       </section>
 
       <section id="contact" class="section section-contact">
-        <div class="contact-card reveal">
+        <div class="contact-card reveal tilt-card">
           <p class="section-eyebrow">04 · Contact</p>
           <h2>Let's build something.</h2>
           <p>

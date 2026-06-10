@@ -864,6 +864,18 @@ main {
   transform: translateX(3px);
 }
 
+.bento-featured-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.bento-featured-footer .bento-meta,
+.bento-featured-footer .bento-link {
+  margin-top: 0;
+}
+
 /* ---------- contact ---------- */
 
 .section-contact {

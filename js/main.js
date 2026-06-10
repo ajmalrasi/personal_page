@@ -33,7 +33,7 @@ function updateScrollState() {
     .pop();
 
   navLinks.forEach((link) => {
-    link.classList.toggle("active", activeSection && link.getAttribute("href") === `#${activeSection.id}`);
+    link.classList.toggle("active", Boolean(activeSection) && link.getAttribute("href") === `#${activeSection.id}`);
   });
 }
 
@@ -228,7 +228,11 @@ function bootNeuralCanvas() {
   const context = canvas.getContext("2d");
   const particles = [];
   const pointer = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
-  const particleCount = Math.min(90, Math.floor(window.innerWidth / 18));
+  const isSmallScreen = window.innerWidth < 640;
+  const particleCount = isSmallScreen
+    ? Math.min(36, Math.floor(window.innerWidth / 16))
+    : Math.min(90, Math.floor(window.innerWidth / 18));
+  const linkDistance = isSmallScreen ? 95 : 130;
 
   function resize() {
     const scale = window.devicePixelRatio || 1;
@@ -273,7 +277,7 @@ function bootNeuralCanvas() {
 
       context.beginPath();
       context.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-      context.fillStyle = "rgba(61, 214, 208, 0.42)";
+      context.fillStyle = "rgba(94, 234, 212, 0.4)";
       context.fill();
     });
 
@@ -283,11 +287,11 @@ function bootNeuralCanvas() {
         const b = particles[j];
         const distance = Math.hypot(a.x - b.x, a.y - b.y);
 
-        if (distance < 130) {
+        if (distance < linkDistance) {
           context.beginPath();
           context.moveTo(a.x, a.y);
           context.lineTo(b.x, b.y);
-          context.strokeStyle = `rgba(155, 123, 255, ${0.18 * (1 - distance / 130)})`;
+          context.strokeStyle = `rgba(167, 139, 250, ${0.17 * (1 - distance / linkDistance)})`;
           context.lineWidth = 1;
           context.stroke();
         }

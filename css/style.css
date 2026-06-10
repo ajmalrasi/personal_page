@@ -331,7 +331,8 @@ main {
   background-clip: text;
   color: transparent;
   animation: gradient-shift 6s ease-in-out infinite alternate;
-  min-height: 1.05em;
+  /* Reserve space for 2 wrapped lines so content below never shifts */
+  min-height: 2.15em;
 }
 
 .dynamic-role::after {

@@ -51,6 +51,32 @@ let phraseIndex = 0;
 let charIndex = 0;
 let deleting = false;
 
+function lockDynamicRoleHeight() {
+  if (!role) return;
+
+  const probe = document.createElement("span");
+  probe.className = role.className;
+  probe.setAttribute("aria-hidden", "true");
+  probe.style.cssText = `
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+    display: block;
+    width: ${role.offsetWidth}px;
+  `;
+
+  role.parentElement.appendChild(probe);
+
+  let maxHeight = 0;
+  for (const phrase of phrases) {
+    probe.textContent = phrase;
+    maxHeight = Math.max(maxHeight, probe.offsetHeight);
+  }
+
+  probe.remove();
+  role.style.height = `${maxHeight}px`;
+}
+
 function typeRole() {
   if (!role || prefersReducedMotion) return;
 
@@ -81,8 +107,14 @@ function typeRole() {
 }
 
 if (role && !prefersReducedMotion) {
+  lockDynamicRoleHeight();
   role.textContent = "";
-  typeRole();
+  requestAnimationFrame(() => {
+    lockDynamicRoleHeight();
+    typeRole();
+  });
+  window.addEventListener("resize", lockDynamicRoleHeight, { passive: true });
+  document.fonts?.ready.then(lockDynamicRoleHeight);
 }
 
 const commands = [

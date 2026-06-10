@@ -320,6 +320,10 @@ main {
   font-weight: 800;
   line-height: 1.04;
   letter-spacing: -0.03em;
+}
+
+.hero-headline-static {
+  display: block;
   text-wrap: balance;
 }
 
@@ -331,8 +335,11 @@ main {
   background-clip: text;
   color: transparent;
   animation: gradient-shift 6s ease-in-out infinite alternate;
-  /* Reserve space for 2 wrapped lines so content below never shifts */
-  min-height: 2.15em;
+  overflow: hidden;
+}
+
+.dynamic-role {
+  min-height: 3.12em;
 }
 
 .dynamic-role::after {

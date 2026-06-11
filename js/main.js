@@ -41,10 +41,10 @@ window.addEventListener("scroll", updateScrollState, { passive: true });
 updateScrollState();
 
 const phrases = [
-  "from Jetson to the cloud.",
-  "for cars, cameras, and data platforms.",
-  "with CV, MLOps, and real systems.",
-  "that survives production traffic."
+  "and shipping it to production.",
+  "in cars, cabins, and cameras.",
+  "on Jetson, SOCs, and the edge.",
+  "at petabyte scale in the cloud."
 ];
 const role = document.querySelector(".dynamic-role");
 let phraseIndex = 0;
@@ -118,10 +118,10 @@ if (role && !prefersReducedMotion) {
 }
 
 const commands = [
-  "deploy --target=edge",
-  "optimize --latency real-time",
-  "scale --pipeline petabytes",
-  "ship --mlops production"
+  "detect --faces --realtime",
+  "quantize --int8 --tensorrt",
+  "deploy --target=jetson",
+  "scale --pipeline petabytes"
 ];
 const typedCommand = document.querySelector(".typed-command");
 let commandIndex = 0;

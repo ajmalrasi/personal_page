@@ -14,8 +14,8 @@
     </linearGradient>
   </defs>
   <text x="80" y="120" fill="#8b9cb0" font-family="Arial, sans-serif" font-size="28" letter-spacing="4">AJMAL RASI</text>
-  <text x="80" y="290" fill="#eef2f7" font-family="Arial, sans-serif" font-size="72" font-weight="700">AI &amp; Software</text>
-  <text x="80" y="380" fill="url(#text)" font-family="Arial, sans-serif" font-size="72" font-weight="700">Engineering</text>
-  <text x="80" y="470" fill="#8b9cb0" font-family="Arial, sans-serif" font-size="34">Computer vision · MLOps · Edge to cloud</text>
+  <text x="80" y="290" fill="#eef2f7" font-family="Arial, sans-serif" font-size="72" font-weight="700">Computer Vision</text>
+  <text x="80" y="380" fill="url(#text)" font-family="Arial, sans-serif" font-size="72" font-weight="700">&amp; AI Engineering</text>
+  <text x="80" y="470" fill="#8b9cb0" font-family="Arial, sans-serif" font-size="34">Deep learning · Edge AI · Production ML</text>
   <text x="80" y="560" fill="#3dd6d0" font-family="Arial, sans-serif" font-size="30">ajmalrasi.com</text>
 </svg>
